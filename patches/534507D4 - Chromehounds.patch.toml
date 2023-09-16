@@ -1,0 +1,13 @@
+title_name = "Chromehounds"
+title_id = "534507D4" # SE-2004
+hash = "A3F26A08CE7087ED" # default.xex
+#media_id = "048EED64", # Disc (USA, Europe): http://redump.org/disc/14835
+
+[[patch]]
+    name = "Debug"
+    author = "imaginebeingatcomputers"
+    is_enabled = false
+
+    [[patch.be32]]
+        address = 0x82368de0
+        value = 0x3860ffff
