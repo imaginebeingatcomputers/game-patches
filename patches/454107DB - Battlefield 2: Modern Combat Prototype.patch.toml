@@ -1,0 +1,40 @@
+title_name = "Battlefield 2: Modern Combat Prototype"
+title_id = "454107DB"
+hash = "AE30E807724E0EB5" # mpdefault.xex
+#media_id = "00000000", # Disc (USA, Europe): http://redump.org/disc/14835
+
+[[patch]]
+    name = "Disable XBL360UpdateAccount"
+    author = "imaginebeingatcomputers"
+    is_enabled = false
+
+    [[patch.be32]]
+        address = 0x8246ccc8
+        value = 0x60000000
+    [[patch.be32]]
+        address = 0x8246cccc
+        value = 0x60000000
+    [[patch.be32]]
+        address = 0x8246ccD0
+        value = 0x60000000
+    [[patch.be32]]
+        address = 0x8246ccD4
+        value = 0x60000000
+    [[patch.be32]]
+        address = 0x8246ccD8
+        value = 0x60000000
+    [[patch.be32]]
+        address = 0x8246ccDC
+        value = 0x60000000
+
+[[patch]]
+    name = "Force v4 to stay 1"
+    author = "imaginebeingatcomputers"
+    is_enabled = false
+
+    [[patch.be32]]
+        address = 0x8249a8cc
+        value = 0x60000000
+    [[patch.be32]]
+        address = 0x8249a8d0
+        value = 0x60000000
